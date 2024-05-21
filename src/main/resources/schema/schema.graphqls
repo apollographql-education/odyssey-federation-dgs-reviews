@@ -1,0 +1,12 @@
+type Query {
+    "A list of all the reviews in the database"
+    allReviews: [Review!]!
+}
+
+type Review {
+    id: ID!
+    "Written comment the author has written about the review target"
+    text: String!
+    "The numerical rating for the review target, on a scale of 1-5, with 5 being excellent."
+    rating: Float!
+}
