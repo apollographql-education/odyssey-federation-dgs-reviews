@@ -1,4 +1,4 @@
-package com.example.reviewsservice.entity;
+package com.example.reviews.entity;
 
 import lombok.Data;
 import lombok.ToString;

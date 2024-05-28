@@ -1,4 +1,4 @@
-package com.example.reviewsservice.dto;
+package com.example.reviews.dto;
 
 import lombok.Data;
 import lombok.ToString;

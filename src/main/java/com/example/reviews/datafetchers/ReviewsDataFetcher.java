@@ -1,6 +1,6 @@
-package com.example.reviewsservice.datafetchers;
-import com.example.reviewsservice.controller.ReviewController;
-import com.example.reviewsservice.dto.ReviewDto;
+package com.example.reviews.datafetchers;
+import com.example.reviews.dto.ReviewDto;
+import com.example.reviews.controller.ReviewController;
 import com.netflix.graphql.dgs.DgsComponent;
 import com.netflix.graphql.dgs.DgsQuery;
 import org.springframework.beans.factory.annotation.Autowired;

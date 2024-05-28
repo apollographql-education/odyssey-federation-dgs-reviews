@@ -1,8 +1,8 @@
-package com.example.reviewsservice.service;
+package com.example.reviews.service;
 
-import com.example.reviewsservice.dto.ReviewDto;
-import com.example.reviewsservice.repository.ReviewRepository;
-import com.example.reviewsservice.util.EntityDtoUtil;
+import com.example.reviews.dto.ReviewDto;
+import com.example.reviews.repository.ReviewRepository;
+import com.example.reviews.util.EntityDtoUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;

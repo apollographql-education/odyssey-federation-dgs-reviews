@@ -1,6 +1,6 @@
-package com.example.reviewsservice.repository;
+package com.example.reviews.repository;
 
-import com.example.reviewsservice.entity.Review;
+import com.example.reviews.entity.Review;
 import org.springframework.data.repository.reactive.ReactiveCrudRepository;
 import org.springframework.stereotype.Repository;
 

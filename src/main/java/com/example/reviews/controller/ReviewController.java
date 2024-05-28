@@ -1,7 +1,7 @@
-package com.example.reviewsservice.controller;
+package com.example.reviews.controller;
 
-import com.example.reviewsservice.dto.ReviewDto;
-import com.example.reviewsservice.service.ReviewService;
+import com.example.reviews.dto.ReviewDto;
+import com.example.reviews.service.ReviewService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

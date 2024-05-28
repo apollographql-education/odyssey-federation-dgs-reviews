@@ -1,7 +1,7 @@
-package com.example.reviewsservice.util;
+package com.example.reviews.util;
 
-import com.example.reviewsservice.dto.ReviewDto;
-import com.example.reviewsservice.entity.Review;
+import com.example.reviews.entity.Review;
+import com.example.reviews.dto.ReviewDto;
 import org.springframework.beans.BeanUtils;
 
 public class EntityDtoUtil {
