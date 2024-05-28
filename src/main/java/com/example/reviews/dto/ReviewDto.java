@@ -10,4 +10,5 @@ public class ReviewDto {
     private Integer id;
     private String text;
     private Float rating;
+    private String listing;
 }

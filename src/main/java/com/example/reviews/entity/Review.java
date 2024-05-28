@@ -14,4 +14,5 @@ public class Review {
     private Integer id;
     private String text;
     private Float rating;
+    private String listing;
 }
