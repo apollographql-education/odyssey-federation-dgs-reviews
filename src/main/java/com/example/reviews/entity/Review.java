@@ -1,4 +1,4 @@
-package com.example.reviewsservice.entity;
+package com.example.reviews.entity;
 
 import lombok.Data;
 import lombok.ToString;
@@ -14,4 +14,5 @@ public class Review {
     private Integer id;
     private String text;
     private Float rating;
+    private String listing;
 }

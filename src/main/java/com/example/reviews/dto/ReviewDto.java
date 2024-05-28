@@ -1,4 +1,4 @@
-package com.example.reviewsservice.dto;
+package com.example.reviews.dto;
 
 import lombok.Data;
 import lombok.ToString;
@@ -7,7 +7,8 @@ import lombok.ToString;
 @ToString
 public class ReviewDto {
 
+    public String listing;
     private Integer id;
     private String text;
-    private Float rating;
+    public Float rating;
 }

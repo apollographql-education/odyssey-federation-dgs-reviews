@@ -40,9 +40,7 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
-generateJava {
-	schemaPaths = ["${projectDir}/src/main/resources/graphql-client"]
-	packageName = 'com.example.reviewsservice.codegen'
-	generateClient = true
+tasks.generateJava {
+	packageName = "com.example.reviews.generated"
 }
 

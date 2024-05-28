@@ -3,6 +3,14 @@ type Query {
     allReviews: [Review!]!
 }
 
+type Listing @key(fields: "id") {
+    id: ID!
+    "The submitted reviews for this listing"
+    reviews: [Review!]!
+    "The overall calculated rating for a listing"
+    overallRating: Float
+}
+
 type Review {
     id: ID!
     "Written comment the author has written about the review target"

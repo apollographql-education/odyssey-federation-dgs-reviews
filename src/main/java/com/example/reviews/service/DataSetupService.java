@@ -1,4 +1,4 @@
-package com.example.reviewsservice.service;
+package com.example.reviews.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
