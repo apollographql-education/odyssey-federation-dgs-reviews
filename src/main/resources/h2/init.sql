@@ -1,7 +1,7 @@
 create table reviews (
-    id bigint auto_increment,
+    id int auto_increment UNIQUE,
     text TEXT,
-    rating float,
+    rating double,
     listing varchar(255),
     primary key (id)
 );

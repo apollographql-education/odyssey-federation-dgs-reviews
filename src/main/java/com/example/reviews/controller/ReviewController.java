@@ -1,5 +1,7 @@
 package com.example.reviews.controller;
 
+import com.example.reviews.entity.Review;
+import com.example.reviews.generated.types.ReviewInput;
 import com.example.reviews.service.ReviewService;
 import com.example.reviews.dto.ReviewDto;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +28,17 @@ public class ReviewController {
 
         return this.service.findByListingId(listingId);
 
+    }
+
+    @GetMapping("submitReview")
+    public Mono<Review> submitReview(String listingId, ReviewInput review) {
+
+        ReviewDto newReview = new ReviewDto();
+        newReview.setListing(listingId);
+        newReview.setText(review.getText());
+        newReview.setRating(review.getRating());
+        Mono<com.example.reviews.entity.Review> createdReview = this.service.createReviewForListing(newReview);
+        return createdReview;
     }
 
     @GetMapping("averageRatingForListing")
