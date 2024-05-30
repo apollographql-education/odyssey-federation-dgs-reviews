@@ -1,9 +1,6 @@
 package com.example.reviews.dto;
 
 import com.example.reviews.generated.types.Review;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
 
 public class ReviewDto extends Review {
 
