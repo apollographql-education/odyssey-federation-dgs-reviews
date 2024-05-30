@@ -13,6 +13,6 @@ public class Review {
     @Id
     private Integer id;
     private String text;
-    private Float rating;
+    private double rating;
     private String listing;
 }

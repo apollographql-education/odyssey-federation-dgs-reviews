@@ -23,7 +23,6 @@ public class DataSetupService implements CommandLineRunner {
     public void run(String... args) throws Exception {
         // read the SQL file
         String query = StreamUtils.copyToString(initSql.getInputStream(), StandardCharsets.UTF_8);
-        System.out.println(query);
         this.entityTemplate
                 .getDatabaseClient()
                 .sql(query)

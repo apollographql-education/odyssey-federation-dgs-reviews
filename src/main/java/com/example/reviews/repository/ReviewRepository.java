@@ -11,11 +11,11 @@ import reactor.core.publisher.Mono;
 @Repository
 public interface ReviewRepository extends ReactiveCrudRepository<Review, Integer> {
 
-        @Query("SELECT * FROM reviews WHERE listing = :listingId")
-        Flux<ReviewDto> findByListingId(String listingId);
+    @Query("SELECT * FROM reviews")
+    Flux<ReviewDto> findAllReviews();
+    @Query("SELECT * FROM reviews WHERE listing = :listingId")
+    Flux<ReviewDto> findByListingId(String listingId);
 
-        @Query("SELECT AVG(rating) FROM reviews WHERE listing = :listingId")
-        Mono<Float> findRatingsByListingId(String listingId);
-
-
+    @Query("SELECT AVG(rating) FROM reviews WHERE listing = :listingId")
+    Mono<Float> findRatingsByListingId(String listingId);
 }
