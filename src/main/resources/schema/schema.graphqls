@@ -26,6 +26,7 @@ type SubmitReviewResponse {
     review: Review
 }
 
+"A comment and a rating submitted by a guest about a particular listing"
 type Review {
     id: ID!
     "Comment the author has written"
