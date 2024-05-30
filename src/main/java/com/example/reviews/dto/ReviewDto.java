@@ -1,35 +1,20 @@
 package com.example.reviews.dto;
 
-import lombok.Data;
-import lombok.ToString;
+import com.example.reviews.generated.types.Review;
 
-@Data
-@ToString
-public class ReviewDto {
+public class ReviewDto extends Review {
 
-    public Integer getId() {
+    @Override
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setId(int id) {
+        this.id = String.valueOf(id);
     }
 
-    public String getText() {
-        return text;
-    }
+    public String id;
 
-    public void setText(String text) {
-        this.text = text;
-    }
-
-    public double getRating() {
-        return rating;
-    }
-
-    public void setRating(double rating) {
-        this.rating = rating;
-    }
 
     public String getListing() {
         return listing;
@@ -39,8 +24,5 @@ public class ReviewDto {
         this.listing = listing;
     }
 
-    public Integer id;
-    public String text;
-    public double rating;
     public String listing;
 }

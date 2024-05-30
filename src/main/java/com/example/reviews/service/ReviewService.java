@@ -18,8 +18,7 @@ public class ReviewService {
     private ReviewRepository reviewRepository;
 
     public Flux<ReviewDto> all() {
-        return this.reviewRepository.findAll()
-                .map(EntityDtoUtil::toDto);
+        return this.reviewRepository.findAllReviews();
     }
 
     public Flux<ReviewDto> findByListingId(String listingId) {
